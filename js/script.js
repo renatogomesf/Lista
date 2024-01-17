@@ -50,14 +50,13 @@ function criarTarefa(){
 
     label_descriçao.innerHTML = tarefa
 
+    lista.appendChild(div_caixaTarefa)
+
     array_tarefas.push(div_caixaTarefa)
-
     array_tarefas.map((ele)=>{
-        lista.appendChild(ele)
-
+        console.log(ele.lastChild)
         ele.lastChild.addEventListener("click",(e)=>{
             lista.removeChild(e.target.parentNode)
-            // console.log(e.target.parentNode)
         })
     })
 
