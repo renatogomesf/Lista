@@ -10,11 +10,20 @@
     font-weight: bold;
 }
 
+:root{
+    --cor1: #012030;
+    --cor2: #13678A;
+    --cor3: #45C4B0;
+    --cor4: #9AEBA3;
+    --cor5: #DAFDBA;
+}
+
 body{
     width: 100vw;
     height: 100vh;
-    background-color: lightskyblue;
+    background-color: var(--cor1);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -44,6 +53,7 @@ h1{
     border-radius: 10px;
     border: 1px solid lightgray;
     cursor: pointer;
+    background-color: var(--cor4);
 }
 
 hr{
@@ -60,7 +70,6 @@ hr{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: lightgray;
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
@@ -83,4 +92,9 @@ hr{
 .apagar{
     cursor: pointer;
     width: 20px;
+}
+
+.copy{
+    color: white;
+    margin: 20px;
 }
