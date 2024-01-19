@@ -66,5 +66,9 @@ function criarTarefa(){
 }
 
 btn_adicionar.addEventListener("click",()=>{
-    criarTarefa()
+    if(add_tarefa.value == ""){
+        alert("Digite algo para adicionar")
+    }else{
+        criarTarefa()
+    }
 })
